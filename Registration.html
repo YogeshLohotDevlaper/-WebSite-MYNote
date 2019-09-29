@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Regi.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>Registration Form</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="Regi.php" method="post" onsubmit="return valF()">
+					<input class="text"type="text" name="Firstname" placeholder="First name" required="First name are messing">
+					<input class="text email" type="text" name="Lastname" placeholder="Last name" required="First name are messing">
+					<input class="text email" type="email" name="Email" placeholder="Email" required="Email are messing">
+					<input class="text" type="password" id="pass"  name="password" placeholder="Password" required="Password are messing">
+					<input class="text w3lpass" type="password" id="Conpass"  name="password" placeholder="Confirm Password" required="Confirm Password are messing">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGNUP">
+				</form>
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+
+</body>
+
+	<script>
+
+		function valF()
+		{
+			
+	
+		var pass = document.getElementById("pass").value;
+		var ConPass = document.getElementById("Conpass").value;
+
+		if (pass == ConPass) {
+			return true;
+		}
+		else
+		{
+			alert("Confirm password is incorrect");
+			return false;
+		}
+		}
+	
+	</script>
+
+</html>
